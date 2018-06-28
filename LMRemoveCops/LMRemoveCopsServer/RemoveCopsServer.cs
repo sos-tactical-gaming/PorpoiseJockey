@@ -2,13 +2,13 @@
 using System.Threading.Tasks;
 using CitizenFX.Core;
 
-namespace LMRemoveCopsServer
+namespace LM
 {
-    public class LMRemoveCopsServer : BaseScript
+    public class RemoveCopsServer : BaseScript
     {
         private readonly float radius = 600f;
 
-        public LMRemoveCopsServer()
+        public RemoveCopsServer()
         {
             Tick += OnTick;
         }
@@ -19,7 +19,7 @@ namespace LMRemoveCopsServer
 
             PlayerList players = new PlayerList();
             foreach (Player player in players)
-                TriggerClientEvent(player, "LMRemoveCops:removeCops", radius);
+                TriggerClientEvent(player, "LM:RemoveCops", radius);
         }
     }
 }
