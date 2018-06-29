@@ -14,7 +14,7 @@ namespace LM
 
         private void OnRemoveCops(float radius)
         {
-            Vector3 localPos = API.GetEntityCoords(API.PlayerPedId(), true);
+            Vector3 localPos = API.GetEntityCoords(API.PlayerPedId(), false);
             API.ClearAreaOfCops(localPos.X, localPos.Y, localPos.Z, radius, 0);
         }
     }
