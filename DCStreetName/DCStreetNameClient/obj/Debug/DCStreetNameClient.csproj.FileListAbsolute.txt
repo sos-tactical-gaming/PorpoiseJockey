@@ -1,5 +1,0 @@
-F:\Documents\FiveM\DCStreetName\dist\DCStreetNameClient.net.dll
-F:\Documents\FiveM\DCStreetName\DCStreetNameClient\obj\Debug\DCStreetNameClient.csprojAssemblyReference.cache
-F:\Documents\FiveM\DCStreetName\DCStreetNameClient\obj\Debug\DCStreetNameClient.csproj.CoreCompileInputs.cache
-F:\Documents\FiveM\DCStreetName\DCStreetNameClient\obj\Debug\DCStreetNameClient.csproj.CopyComplete
-F:\Documents\FiveM\DCStreetName\DCStreetNameClient\obj\Debug\DCStreetNameClient.net.dll
