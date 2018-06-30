@@ -51,6 +51,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /y "$(TargetPath)" "F:\FiveMServerData\resources\DCDisableDispatch"</PostBuildEvent>
+    <PostBuildEvent>copy /y "$(TargetPath)" "F:\FiveMServerData\resources\DCCore\DCDisableDispatch"</PostBuildEvent>
   </PropertyGroup>
 </Project>

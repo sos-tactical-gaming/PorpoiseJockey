@@ -1,1 +1,0 @@
-client_script "DCDisableDispatchClient.net.dll"

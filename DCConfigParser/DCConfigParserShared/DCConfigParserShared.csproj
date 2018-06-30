@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{827C123A-B17A-4044-9753-1C50AA676F30}</ProjectGuid>
+    <ProjectGuid>{E3B542F5-CA78-4B25-A6F5-9B14CFD6D037}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DC</RootNamespace>
-    <AssemblyName>DCRemoveCopsServer.net</AssemblyName>
+    <AssemblyName>DCConfigParserShared.net</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,16 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CitizenFX.Core">
-      <HintPath>..\..\..\..\FiveMServer\citizen\clr2\lib\mono\4.5\CitizenFX.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DCConfigParserShared.net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DCConfigParser\dist\DCConfigParserShared.net.dll</HintPath>
-    </Reference>
-    <Reference Include="DCRemoveCopsShared.net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\dist\DCRemoveCopsShared.net.dll</HintPath>
+    <Reference Include="CitizenFX.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CitizenFX.Core.1.3.0\lib\net45\CitizenFX.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,11 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RemoveCopsServer.cs" />
+    <Compile Include="ConfigParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /y "$(TargetPath)" "F:\FiveMServerData\resources\DCCore\DCRemoveCops"</PostBuildEvent>
+    <PostBuildEvent>copy /y "$(TargetPath)" "F:\FiveMServerData\resources\DCCore\DCConfigParser"</PostBuildEvent>
   </PropertyGroup>
 </Project>

@@ -40,7 +40,8 @@ namespace DC
         private void UpdateZoneText()
         {
             Vector3 localPos = API.GetEntityCoords(API.PlayerPedId(), false);
-            zoneText.Caption = Zone.Names[API.GetNameOfZone(localPos.X, localPos.Y, localPos.Z)];
+            if (Zone.Names.TryGetValue(API.GetNameOfZone(localPos.X, localPos.Y, localPos.Z), out string name))
+                zoneText.Caption = name;
             zoneText.Draw();
         }
 
