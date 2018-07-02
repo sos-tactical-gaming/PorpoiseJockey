@@ -17,7 +17,7 @@ namespace DC
                 Alignment = CitizenFX.Core.UI.Alignment.Center,
                 Outline = true
             };
-            zoneText = new CitizenFX.Core.UI.Text("", new System.Drawing.PointF(1280f * 0.5f, streetText.Position.Y + 28), 0.54f)
+            zoneText = new CitizenFX.Core.UI.Text("", new System.Drawing.PointF(1280f * 0.5f, streetText.Position.Y + 28f), 0.54f)
             {
                 Font = CitizenFX.Core.UI.Font.ChaletComprimeCologne,
                 Alignment = CitizenFX.Core.UI.Alignment.Center,
